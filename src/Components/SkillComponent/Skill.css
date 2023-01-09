@@ -1,0 +1,162 @@
+.skill-section{
+    height: auto;
+    padding-top: 70px;
+}
+
+.skill-title-box{
+    text-align: center;
+}
+
+.skill-title{
+    font-size: 17px;
+    color:#00c0ff;
+    font-weight: 500;
+}
+
+.skill-desc{
+    font-size: 29px;
+    color:white;
+    margin-top: 7px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+
+/* skill-card-styles */
+
+.skill-btn-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-top: 20px;
+}
+
+.skill-card{
+    width: 310px;
+    height: 380px;
+    background-color: #3a2b71;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+
+.relative-box{
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #432d92;
+    margin-bottom: 35px;
+}
+
+
+.position-icon{
+    position: absolute;
+    top:-20px;
+    left:-30px;
+    transition: all ease-in-out 0.2s;
+    color:#00c0ff;
+}
+
+.absolute-active{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out 0.2s;
+    color:white;
+}
+
+
+/* skill-card-hover */
+
+.skill-card:hover .position-icon{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out 0.2s;
+    color:white;
+}
+
+.skill-card:hover .relative-box{
+    background-color: #00c0ff;
+}
+
+/* skill-card-hover */
+
+
+.relative-active{
+    background-color: #00c0ff !important;
+    transition: all ease-in-out 0.2s;
+}
+
+.skill-card-title{
+    text-align: center;
+    width: 278px;
+    height: 200px;
+}
+
+.skill-card-title h3{
+    font-size: 21px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.skill-card-title p{
+    font-weight: 400;
+    line-height: 30px;
+    color:#b4afc6;
+    font-size: 14px;
+}
+
+
+
+
+@media screen and (min-width:1350px){
+
+    .skill-section{
+        height: auto;
+        padding-top: 100px;
+    }
+
+    .skill-btn-wrapper{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .skill-title{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .skill-desc{
+        font-size: 40px;
+    }
+
+    .skill-card{
+        width: 390px;
+        height: 420px;
+    }
+
+    .skill-card-title h3{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .skill-card-title{
+        width: 320px;
+    }
+
+    .skill-card-title p{
+        font-size: 17px;
+    }
+
+
+}

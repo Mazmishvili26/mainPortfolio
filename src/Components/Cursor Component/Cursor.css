@@ -1,0 +1,39 @@
+.cursor{
+    background-color: transparent;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    transform: translate3d(0, 0 , 0);
+    pointer-events: none;
+    border:1px solid #00c0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20000;
+    display: none;
+}
+
+.cursor-center{
+    display: none;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #00c0ff;
+}
+
+
+
+
+
+@media screen and (min-width:600px){
+    .cursor{
+        display: flex;
+    }
+
+    .cursor-center{
+        display: block;
+    }
+}

@@ -1,0 +1,140 @@
+.footer-section{
+    height: 50vh;
+}
+
+.footer-container{
+    max-width: 1300px;
+    width: 90%;
+    height: 300px;
+    background-color: #432d92;
+    margin-top: 150px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* footer-left-styles */
+
+.footer-left{
+    text-align: center;
+}
+
+.footer-left h3{
+    font-size: 19px;
+    color:#00c0ff;
+    margin-bottom: 5px;
+}
+
+
+.footer-left p{
+    font-size: 20px;
+    color:white;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 5px;
+}
+
+.footer-left span{
+    font-size: 15px;
+    color: #b4afc6;
+    line-height: 30px;
+}
+
+
+/* footer-right-styles */
+
+.btn-container{
+    width: 280px;
+    height: 70px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-container input{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border:none;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    outline: none;
+    padding-left:15px;
+}
+
+
+.btn-container button{
+    width: 30%;
+    height: 100%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #00c0ff;
+    border:none;
+    color:white;
+    cursor: pointer;
+    background: linear-gradient(#00c0ff, #00c0ff 50%, #000000  50%, #000000);
+    background-size: 100% 200%;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.btn-container button:hover{
+    background-position: 100% 100%;
+    color:white;
+}
+
+.footer-credits{
+    text-align: center;
+    margin-top: 80px;
+    color:#b4afc6;;
+    font-size: 17px;
+}
+
+
+@media screen and (min-width:1300px){
+    .footer-container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer-left{
+        text-align: start;
+    }
+
+    .footer-left h3{
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    .footer-left p{
+        width: 400px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+    .footer-left span{
+        font-size: 16px;
+    }
+
+    .btn-container{
+        margin-top: 0px;
+    }
+
+    .btn-container{
+        width: 500px;
+    }
+
+
+    .btn-container input{
+        font-size: 18px;
+    }
+
+    .btn-container button{
+        font-size: 18px;
+    }
+
+}

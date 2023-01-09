@@ -1,0 +1,172 @@
+/* display-none-styles */
+
+.header-right-block{
+    display: none;
+}
+
+/* main-header-styles */
+
+
+.header-container{
+    height: 50px;
+    display: flex;
+    background-color: #1e1345;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* header-left-styles */
+
+.header-left-block{
+    margin-left:20px;
+}
+
+.header-left-block img{
+    width: 120px;
+}
+
+
+/* header-burger-styles */
+
+
+.header-burger-box{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.burger-menu{
+    height: 0px;
+    max-width: 1150px;
+    width: 100%;
+    position: absolute;
+    top:51px;
+    left:0px;
+    z-index: 2;
+    background-color: #1e1345;
+    transition: all ease-in-out 0.5s;
+    overflow: hidden;
+    color:white;
+}
+
+
+.show-burger{
+    height: 210px;
+    transition: all ease-in-out 0.5s;
+}
+
+.burger-ul{
+    margin-top: 28px;
+}
+
+.burger-ul li{
+    margin-left: 45px;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.burger-ul li:hover{
+    color:#00c0ff;
+}
+
+
+/* header-socials-wrapper */
+
+.header-socials{
+    margin-left: 25px;
+}
+
+.social-ul{
+    display: flex;
+    gap:15px;
+    transition-duration: 0.3s;
+}
+
+.social-ul li{
+    cursor: pointer;
+}
+
+/* active-links */
+
+.active li{
+    color: #00c0ff !important;
+}
+
+
+@media screen and (min-width:1350px){
+
+    /* display-none-styles */
+    
+    .header-burger-box{
+        display: none;
+    }
+
+    .show-burger{
+        display: none;
+    }
+
+    /* general-header-styles */
+
+    .header-container{
+        height: 80px;
+    }
+
+    .header-left-block img{
+        width: 160px;
+    }
+
+    .header-left-block{
+        margin-left:0px;
+    }
+
+    /* header-right-styles */
+
+    .header-right-block{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-ul{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        color:white;
+    }
+
+
+    .header-ul li{
+        cursor: pointer;
+        font-size: 16px;
+        color:white;
+        transition-duration: 0.4s;
+    }
+
+    .header-ul::after{
+        content: '';
+        width: 2px;
+        height: 20px;
+        background-color: white;
+        display: inline-block;
+        margin-left: -20px;
+    }
+
+    .header-ul li:hover{
+        color:#00c0ff;
+    }
+
+    
+}

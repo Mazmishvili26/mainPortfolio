@@ -1,0 +1,269 @@
+.about-section{
+    height: auto;
+    padding-top: 20px;
+}
+
+.about-container{
+    margin-top: 120px;
+}
+
+/* about-title-styles */
+
+.about-title{
+    text-align: center;
+}
+
+.about-title h3{
+    font-size: 17px;
+    color:#00c0ff;
+    margin-bottom: 5px;
+}
+
+
+.about-title p{
+    color:white;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #fff;
+}
+
+
+
+/* about-wrapper-leftSide styles */
+
+.about-left-side{
+    width: 360px;
+    height: 452px;
+    margin: 50px auto;
+}
+
+.about-left-side .coding-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.about-wrapper{
+    max-width: 1300px;
+    width: 100%;
+}
+
+
+/* about-wrapper-leftSide styles */
+
+
+
+/* about-wrapper-rightSide styles */
+
+.about-right-side{
+    width: 360px;
+    margin: auto;
+}
+
+.about-me-desc h1{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.about-me-desc p{
+    line-height: 30px;
+    letter-spacing: 0;
+    word-wrap: break-word;
+    font-weight: 400;
+    color:#b4afc6;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+
+
+
+/* about-list-wrapper-styles */
+
+.about-list-wrapper{
+    margin-top: 40px;
+}
+
+
+/* about-listLeft styles */
+
+
+.left-list{
+    width: 345px;
+    height: 222px;
+    border-top: 2px solid #625a7d;
+    border-left: 2px solid #625a7d;
+    border-right: 2px solid #625a7d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.list-ul{
+    padding:25px 35px 0;
+}
+
+.list-ul li{
+    color:white;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.list-ul li h5{
+    margin-top: 15px;
+}
+
+.list-ul li p{
+    margin-top: 10px;
+    color:#b4afc6;
+}
+
+/* about-listRight styles */
+
+.right-list{
+    width: 345px;
+    height: 222px;
+    border-bottom: 2px solid #625a7d;
+    border-left: 2px solid #625a7d;
+    border-right: 2px solid #625a7d;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* download-cv-block-styles */
+
+.download-cv-block{
+    margin-top: 40px;
+}
+
+.download-btn{
+    width: 188px;
+    height: 56px;
+    border-radius: 50px;
+    border: none;
+    background-color: #00c0ff;
+    color:white;
+    font-size: 16px;
+    background: linear-gradient(#00c0ff, #00c0ff 50%, #ffffff 50%, #ffffff);
+    background-size: 100% 200%;
+    transition: background 0.3s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.download-btn:hover{
+    background-position: 100% 100%;
+    color:black;
+}
+
+
+.show-btn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+
+.show-btn:hover{
+    color: #00c0ff;
+}
+
+@media screen and (min-width:1300px){
+
+
+    /* general-styles */
+    
+    .about-wrapper{
+        /* background-color: rgba(220, 220, 220, 0.264); */
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+
+    .about-right-side{
+        margin: 0px;
+        width: 55%;
+    }
+
+    .about-left-side{
+        margin: 0px;
+        width: 45%;
+    }
+
+    .about-left-side .coding-img{
+        width: 423px;
+    }
+
+    .about-list-wrapper{
+        display: flex;
+    }
+
+
+    /* about-title-styles */
+
+    .about-title h3{
+        font-size: 25px;
+    }
+
+    .about-title p{
+        font-size: 50px;
+    }
+
+
+    /* about-me-desc-styles */
+
+    .about-me-desc h1{
+        font-size: 30px;
+    }
+
+    .about-me-desc p {
+        font-size: 18px;
+    }
+
+    /* left-list-styles */
+
+    .left-list{
+        border-top: 2px solid #625a7d;
+        border-left: 2px solid #625a7d;
+        border-right: 0px;
+        border-bottom: 2px solid #625a7d;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+
+    /* right-list-styles */
+
+    .right-list{
+        border-bottom: 2px solid #625a7d;
+        border-left: 2px solid #625a7d;
+        border-right: 2px solid #625a7d;
+        border-top: 2px solid #625a7d;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+    /* download-btn-styles */
+    
+    .download-btn{
+        width: 207px;
+        height: 56px;
+        font-size: 18px;
+    }
+
+
+    /* work-img-styles */
+
+
+
+}

@@ -1,0 +1,199 @@
+.landing-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container img{
+    color:red;
+}
+
+
+/* landing-container-styles */
+
+.landing-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 2;
+}
+
+
+.landing-left-block{
+    order: 2;
+}
+
+.landing-right-block{
+    order: 1;
+}
+
+
+/* landing-left-block-styles */
+
+.landing-left-block{
+    text-align: center;
+}
+
+.landing-left-block h1{
+    font-size: 50px;
+    color:white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.landing-left-block h1 .extra-text{
+    color:#00c0ff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.landing-left-block .job-title{
+    font-size: 17px;
+    color:#ffffff;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.connect-btn{
+    width: 190px;
+    height: 56px;
+    background-color: #00c0ff;
+    color:white;
+    border:none;
+    border-radius: 50px;
+    margin-top: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    background: linear-gradient(#00c0ff, #00c0ff 50%, #ffffff 50%, #ffffff);
+    background-size: 100% 200%;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.connect-btn:hover{
+    background-position: 100% 100%;
+    color:black;
+}
+
+/* landing-right-block-styles */
+
+.landing-right-block{
+    margin-top: -90px;
+} 
+
+
+.landing-img-box{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #00c0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-right-block img{
+    width: 200px;
+}
+
+
+
+
+
+@media screen and (min-width:880px){
+
+
+    .landing-img-box{
+        width: 280px;
+        height: 280px;
+    }
+
+    .landing-right-block img{
+        width: 260px;
+    }
+
+    .landing-left-block h1 .extra-text{
+        display: inline-block;
+    }
+
+    .job-title{
+        font-size:20px !important;
+    }
+
+}
+
+
+
+@media screen and (min-width:1350px){
+
+    /* general-styles */
+
+
+    .landing-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .landing-left-block{
+        order: 1;
+    }
+    
+    .landing-right-block{
+        order: 2;
+    }
+
+
+    /* landing-left-block-styles */
+
+    .landing-left-block{
+        text-align: start;
+    }
+
+    .landing-left-block h1{
+        margin-top: 0px;
+        font-size: 100px;
+    }
+
+    .extra-text{
+        display: block !important;
+    }
+
+    .job-title{
+        font-size: 25px !important;
+        margin-top: 30px !important;
+    }
+
+    .connect-btn{
+        width: 220px;
+        height: 66px;
+        font-size: 19px;
+    }
+
+
+    /* landing-right-block-styles */
+
+    .landing-right-block{
+        margin-top: 0px;
+    } 
+
+
+    .landing-img-box{
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .landing-right-block img{
+        width: 450px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .landing-right-block img:hover{
+        transform: scale(1.1);
+    }
+
+
+}
